@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/811caf8c84.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li id="sun-moon"><a><i class="fa-solid fa-sun" style="color: white;"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <container id="container-for-center">
+        <section id="input-section">
+            <div id="form-container">
+                <div class="secondary-divs">
+                    <div>
+                        <h3>How old are you?</h3>
+                        <input type="number">
+                    </div>
+                    <div>
+                        <h3>Where do you live? (Country)</h3>
+                        <input>
+                    </div>
+                    <div>
+                        <h3>Are you willing to study abroad?</h3>
+                        
+                        <input type="radio" id="yes" name="study_abroad" value="y">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="no" name="study_abroad" value="n">
+                        <label for="no">No</label>
+                    </div>
+                    <div>
+                        <h3>What usefull skills do you have?</h3>
+                        <input>
+                    </div>
+                    <div>
+                        <h3>What have you been studying untill now?</h3>
+                        <input>
+                    </div>
+                </div>
+    
+                <div id="essay-div" class="secondary-divs">
+                    <h2>Please let us know a little bit more about you</h2>
+                    <h3>(what you like and what you don't like to do, what are your hobbies, etc.)</h3>
+                    <textarea id="essay"></textarea>
+                </div>
+            </div>
+            <button id="submit-button">
+                Submit
+            </button>
+    
+        </section>
+    </container>
+    <footer>
+        <h1><a href="https://hacktues.bg/">Hack Tues X</a></h1>
+        <h1><a href="https://hacktues.bg/teams/23-e-chin">23 e chin</a></h1>
+    </footer>
+</body>
+
+</html>
