@@ -1,56 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Enhanced Form Page</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/811caf8c84.js" crossorigin="anonymous"></script>
-    <title>Document</title>
 </head>
+<body class="d-flex flex-column">
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <div class="navbar-nav">
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" id="sun-moon" href="#"><i class="fa-solid fa-sun" style="color: white;"></i></a>
+            </div>
+        </div>
+    </nav>
+</header>
 
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li id="sun-moon"><a><i class="fa-solid fa-sun" style="color: white;"></i></a></li>
-            </ul>
-        </nav>
-        <div id="header-image">
-            <h1>AAAAAAAAAAA</h1>
-            <p>SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA
-                SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA
-                SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA</p>
+<div class="container page-content flex-grow-1 my-5">
+    <div class="row">
+        <div class="col-lg-12">
+            <div id="header-image" class="mb-5">
+                <h1>AAAAAAAAAAA</h1>
+                <p>SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA SHTE OTKACHA</p>
+            </div>
+            <div id="buttons-sections" class="d-flex justify-content-around flex-wrap">
+                <!-- Sections -->
+                <div class="education-section">
+                    <h2>Continue your education</h2>
+                    <i class="fa-solid fa-school"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div class="education-section">
+                    <h2>Continue your education</h2>
+                    <i class="fa-solid fa-school"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <div class="education-section">
+                    <h2>Continue your education</h2>
+                    <i class="fa-solid fa-school"></i>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+                <!-- Repeat sections as needed -->
+            </div>
         </div>
-    </header>
-    <section id="buttons-sections">
-        <div>
-            <h2>Continue your education</h2>
-            <i class="fa-solid fa-school"></i>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel fugiat corporis est in? Totam porro saepe placeat qui aperiam neque beatae corporis nam incidunt ad? Aliquid quo autem iure sunt!</p>
-        </div>
-        <div>
-            <h2>Continue your education</h2>
-            <i class="fa-solid fa-school"></i>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel fugiat corporis est in? Totam porro saepe placeat qui aperiam neque beatae corporis nam incidunt ad? Aliquid quo autem iure sunt!</p>
-        </div>
-        <div>
-            <h2>Continue your education</h2>
-            <i class="fa-solid fa-school"></i>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel fugiat corporis est in? Totam porro saepe placeat qui aperiam neque beatae corporis nam incidunt ad? Aliquid quo autem iure sunt!</p>
-        </div>
-        <div>
-            <h2>Continue your education</h2>
-            <i class="fa-solid fa-school"></i>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel fugiat corporis est in? Totam porro saepe placeat qui aperiam neque beatae corporis nam incidunt ad? Aliquid quo autem iure sunt!</p>
-        </div>
-    </section>
-    <footer>
-        <h1><a href="https://hacktues.bg/">Hack Tues X</a></h1>
-        <h1><a href="https://hacktues.bg/teams/23-e-chin">23 e chin</a></h1>
-    </footer>
+    </div>
+</div>
+
+<footer class="footer mt-auto py-3">
+    <div class="container text-center">
+        <a href="https://hacktues.bg/">Hack Tues X</a> |
+        <a href="https://hacktues.bg/teams/23-e-chin">23 e chin</a>
+    </div>
+</footer>
+
+<script src="js/index.js"></script>
 </body>
-
 </html>

@@ -11,8 +11,10 @@ app.use(express.static("public"));
 const openai = new OpenAI({apiKey: process.env.OPENAI_API_KEY});
 
 let threadByUser = {};
+messages = [];
 
 app.post('/api', async (req, res) => {
+    //*
     const assistantId = process.env.ASSISTANT_ID;
     const assistant = await openai.beta.assistants.retrieve(assistantId);
 
@@ -54,6 +56,25 @@ app.post('/api', async (req, res) => {
 
         await new Promise(resolve => setTimeout(resolve, 1000));
     }
+    /*/
+    messages.push({
+        role: 'user',
+        content: req.body.message
+    });
+
+    const result = await openai.chat.completions.create({
+        model: "gpt-3.5-turbo",
+        messages: messages,
+        top_p: 0.9,
+    });
+
+    messages.push({
+        role: 'assistant',
+        content: result.choices[0].message.content
+    });
+
+    res.status(200).json({response: result.choices[0].message.content});
+    //*/
 });
 
 const PORT = process.env.PORT || 3000;
