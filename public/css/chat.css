@@ -34,7 +34,7 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: #E0F2F1;
-    background-color: #00796B;
+    background-color: #2E3C43;
 }
 
 .title img {
@@ -194,7 +194,7 @@ body {
     background-color: #263238;
 }
 
-/* tuka e za popupa */
+/* ot tuka e za popupa */
 #popup {
     position: fixed;
     top: 10%;
@@ -300,6 +300,7 @@ label {
     height: 25px;
     width: 25px;
     background-color: #eee;
+    border-radius: 3px;
 }
 
 .question-input:checked ~ .question-label .custom-checkbox {
@@ -317,8 +318,8 @@ label {
 }
 
 .question-label .custom-checkbox:after {
-    left: 9px;
-    top: 5px;
+    left: 7px;
+    top: 2px;
     width: 8px;
     height: 15px;
     border: solid white;
