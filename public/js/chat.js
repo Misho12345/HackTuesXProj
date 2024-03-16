@@ -15,12 +15,13 @@ let currentChat = 0;
 
 function calculateRIASEC() {
     const categories = { R: 0, I: 0, A: 0, S: 0, E: 0, C: 0 };
-    const inputs = form.querySelectorAll('input[type="radio"]:checked');
+    const inputs = form.querySelectorAll('input:checked');
     inputs.forEach(input => {
         if(input.value !== '0') {
             categories[input.value]++;
         }
     });
+    console.log(categories);
     return JSON.stringify(categories);
 }
 
@@ -73,7 +74,7 @@ function makePopupPage2() {
     questions.forEach((question, index) => {
         form.innerHTML +=
             `<div class="question-container">
-                <input class="question-input" type="checkbox" id="checkbox_${index}" name="${question.text}" value="${question.category}" hidden>
+                <input class="question-input" name="a" type="checkbox" id="checkbox_${index}" name="${question.text}" value="${question.category}" hidden>
                 <label class="question-label" for="checkbox_${index}">
                     <span class="custom-checkbox"></span>${question.text}
                 </label>
@@ -173,7 +174,7 @@ function setupUser(data, begin=true) {
         .then(data => threads = data.threads)
         .then(async _ => {
             threads.reverse().forEach((thread, index) => {
-                historyContainer.innerHTML += `<div class="history-panel" onclick="switchChat(${index})">SUS</div>`;
+                historyContainer.innerHTML += `<div class="history-panel" onclick="switchChat(${index})">Chat-Name</div>`;
             });
 
             await switchChat(currentChat);
