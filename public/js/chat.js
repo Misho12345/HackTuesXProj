@@ -24,7 +24,7 @@ function calculateRIASEC() {
     return JSON.stringify(categories);
 }
 
-function makePopup() {
+function makePopupPage2() {
     const questions = [
         { text: "Обичам да работя по автомобили", category: "R" },
         { text: "Обичам да редя пъзели", category: "I" },
@@ -125,16 +125,18 @@ function start() {
     document.cookie = cookie = `userId=${randStr(16)}`;
 
     popup.style.display = "block";
+    document.getElementById("overlay").style.display = "block";
 
     document.querySelector("#next").addEventListener("click", e => {
         e.preventDefault();
         document.getElementById("page-1").style.display = "none";
-        makePopup();
+        makePopupPage2();
         document.getElementById("page-2").style.display = "block";
 
         document.querySelector("#submit-form").addEventListener("click", e => {
             e.preventDefault();
             popup.style.display = "none";
+            document.getElementById("overlay").style.display = "none";
 
             const age = document.querySelector("#age").value;
             const country = document.querySelector("#country").value;

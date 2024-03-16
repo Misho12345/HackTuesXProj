@@ -27,6 +27,8 @@
         </div>
     </div>
 
+    <div id="overlay" style="display: none"></div>
+
     <div id="popup" style="display: none">
         <div class="page" id="page-1">
             <h2>Personal Information</h2>
@@ -39,10 +41,13 @@
 
                 <div>
                     <label>Are you willing to study abroad?</label><br>
-                    <input type="radio" id="study_abroad_yes" name="study_abroad" value="yes">
-                    <label for="study_abroad_yes">Yes</label>
-                    <input type="radio" id="study_abroad_no" name="study_abroad" value="no" checked>
-                    <label for="study_abroad_no">No</label>
+                    <div class="radio-container">
+                        <input type="radio" id="study_abroad_yes" name="study_abroad" value="yes" class="radio-input">
+                        <label for="study_abroad_yes" class="radio-label">Yes</label>
+
+                        <input type="radio" id="study_abroad_no" name="study_abroad" value="no" class="radio-input" checked>
+                        <label for="study_abroad_no" class="radio-label">No</label>
+                    </div>
                 </div>
 
                 <h2>Skills and Interests</h2>
