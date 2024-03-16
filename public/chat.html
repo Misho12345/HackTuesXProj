@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/chat.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="title">
+                <img src="images/logo_sui.png" alt="logo" />
+                <div>HOBBYt</div>
+            </div>
+
+            <button id="new-chat" onclick="makeNewChat()">New Chat +</button>
+            <div id="history-container"></div>
+        </div>
+
+        <div class="chat-content">
+            <div id="messages-container"></div>
+
+            <div class="input-container">
+                <input id="input" class="message-input" placeholder="Type your message here..." autocomplete="off" />
+                <button id="submit" class="send-message">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" style="display: none">
+        <div class="page" id="page-1">
+            <h2>Personal Information</h2>
+            <form id="#submit-form">
+                <label for="age">How old are you?</label>
+                <input type="number" id="age" name="age"><br>
+
+                <label for="country">Where do you live? (Country)</label>
+                <input type="text" id="country" name="country"><br>
+
+                <div>
+                    <label>Are you willing to study abroad?</label><br>
+                    <input type="radio" id="study_abroad_yes" name="study_abroad" value="yes">
+                    <label for="study_abroad_yes">Yes</label>
+                    <input type="radio" id="study_abroad_no" name="study_abroad" value="no" checked>
+                    <label for="study_abroad_no">No</label>
+                </div>
+
+                <h2>Skills and Interests</h2>
+
+                <label for="skills">What useful skills do you have?</label>
+                <input type="text" id="skills" name="skills"><br>
+
+                <label for="studies">What have you been studying until now?</label>
+                <input type="text" id="studies" name="studies"><br>
+
+                <label for="about">Please let us know a little bit more about you</label>
+                <textarea id="about" name="about"></textarea><br>
+
+                <button id="next" type="submit">Next</button>
+            </form>
+        </div>
+        <div class="page" id="page-2" style="display: none;">
+            <div id="questions-container">
+                <form id="riasec-form"></form>
+            </div>
+            <button id="submit-form" type="submit">Submit</button>
+        </div>
+    </div>
+
+
+    <script src="js/chat.js"></script>
+</body>
+</html>
